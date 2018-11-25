@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { MainPage, MyPage, EditorPage, EntryPage } from 'pages';
+import { MainPage, MyPage, EditorPage, EntryPage } from '../pages';
 
 class App extends Component {
   render() {

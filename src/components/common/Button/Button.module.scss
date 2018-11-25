@@ -1,0 +1,13 @@
+@import '../../../styles/utils';
+
+.button {
+  color: $white;
+  font-family: Baloo, Montserrat, sans-serif;
+  font-size: 18px;
+  padding: 6px 16.5px;
+  border-radius: 20px;
+  background-color: $grey-buttonBG;
+  &:hover {
+    background-color: $hover-grey-buttonBG;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from 'components/common/Header';
-import Footer from 'components/common/Footer';
+import Header from '../../../components/common/Header';
+import Footer from '../../../components/common/Footer';
 import styles from './PageTemplate.module.scss';
 import PropTypes from 'prop-types';
 
