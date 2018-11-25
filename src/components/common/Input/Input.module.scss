@@ -1,0 +1,20 @@
+@import '../../../styles/utils';
+
+.input-wrap {
+  width:100%;
+}
+.input-text {
+  position: relative;
+  width: 100%;
+  line-height: 32px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  cursor:text;
+  @include placeholder {
+    opacity:0.3; color: #ffffff;
+  }
+}

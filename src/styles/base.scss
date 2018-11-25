@@ -90,3 +90,11 @@ select[multiple]
   vertical-align:top;
 }
 
+// button init
+button {
+  border: none;
+  background: none;
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Form.module.scss';
 import PropTypes from 'prop-types';
+import styles from './Form.module.scss';
 
 const Button = props => (
   <button className={`${styles['button-wrap']} ${props.classNames['button-wrap']}`}>

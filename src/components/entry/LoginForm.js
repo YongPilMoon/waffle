@@ -1,5 +1,6 @@
 import React from 'react';
-import { InputText, Button } from '../common/Form/index';
+import { Button } from '../common/Form/index';
+import Input from '../common/Input/Input';
 import styles from './Entry.module.scss';
 
 const inputCustomize = { 'input-wrap': [], 'input-text': ['entry-input'] };
@@ -9,8 +10,8 @@ const LoginForm = () => (
   <form className={styles['entry-form']}>
     <fieldset>
       <legend>Log in</legend>
-      <InputText placeHolder="✉️ email" classNames={inputCustomize} />
-      <InputText placeHolder="🔒 password" classNames={inputCustomize} />
+      <Input placeHolder="✉️ email" classNames={inputCustomize} />
+      <Input placeHolder="🔒 password" classNames={inputCustomize} />
     </fieldset>
     <Button text="sign in" classNames={buttonCustomize} />
   </form>

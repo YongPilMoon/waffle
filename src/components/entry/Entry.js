@@ -4,7 +4,7 @@ import styles from './Entry.module.scss';
 
 const components = { LoginForm, SignForm };
 class Entry extends React.Component {
-  state = { formType: 'LoginForm' };
+  state = { formType: 'SignForm' };
 
   routeComponent = () => {
     const Component = components[this.state.formType];
@@ -14,13 +14,27 @@ class Entry extends React.Component {
   handleRouting = (val) => {
     this.setState({ formType: val });
   };
+
   render() {
+    const { formType } = this.state;
     return (
       <article>
         <h1 className={styles['entry-title']}>
-          <a onClick={() => { this.handleRouting('SignForm'); }} alt="sign up" className={this.state.formType === 'SignForm' ? styles['clicked'] : styles['unClicked']}>Sign Up</a>
-          <span className={styles['unClicked']}>&nbsp;or&nbsp;</span>
-          <a onClick={() => { this.handleRouting('LoginForm'); }} alt="log in" className={this.state.formType === 'LoginForm' ? styles['clicked'] : styles['unClicked']}>Log In</a>
+          <button
+            type="button"
+            onClick={() => { this.handleRouting('SignForm'); }}
+            className={formType === 'SignForm' ? styles.clicked : styles.unClicked}
+          >
+            Sign Up
+          </button>
+          <span className={styles.unClicked}>&nbsp;or&nbsp;</span>
+          <button
+            type="button"
+            onClick={() => { this.handleRouting('LoginForm'); }}
+            className={formType === 'LoginForm' ? styles.clicked : styles.unClicked}
+          >
+            Log In
+          </button>
         </h1>
         {this.routeComponent()}
       </article>
