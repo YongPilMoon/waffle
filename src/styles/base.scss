@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// 링크 스타일 밑줄 및 색상 무효화
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea
+{
+  margin:0;
+  border:0;
+  padding:0;
+  display:inline-block;
+  vertical-align:middle;
+  white-space:normal;
+  background:none;
+  line-height:1;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus
+{
+  outline:0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea
+{
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  box-sizing:content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea
+{
+  /* Move the label to the top */
+  vertical-align:top;
+
+  /* Turn off scroll bars in IE unless needed */
+  overflow:auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select[multiple]
+{
+  /* Move the label to the top */
+  vertical-align:top;
+}
+

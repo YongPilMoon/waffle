@@ -1,0 +1,14 @@
+@import '../../../styles/utils';
+
+.calendar { margin-top: 4rem; }
+.week { display: flex;}
+.date-wrapper { display: flex; flex-direction: column;
+&:not(:last-child) {
+  margin-right: 4.1rem;
+}}
+.day { font-size: 16px; color: white; margin-top: 1.2rem; }
+.sun { color: $blood-orange }
+.sat { color: $bright-light-blue }
+.date { font-size: 16px; color: white; margin-top: 2px; }
+.thumbnail { width: 12rem; height: 12rem; opacity: 0.1; border-radius: 5px; background-color: #ffffff; margin-top: 1.2rem;
+&:hover { background-color: $yellow-orange; opacity: 1; cursor: pointer; }}

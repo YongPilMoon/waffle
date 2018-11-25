@@ -1,0 +1,16 @@
+@import '../../../styles/utils';
+
+.emoji-header { display: flex; justify-content: space-between; }
+.done-btn { font-family: Baloo, 'sans-serif'; font-size: 20px; color: white; background-color: $yellow-orange;
+padding: 9px 16px; border-radius: 24px; }
+.back-btn { display: flex; align-items: center; border-radius: 24px; background-color: rgba(248, 249, 250, 0.1);
+padding: 0 16px 0 8px; }
+.back-btn-txt { font-family: Baloo, 'sans-serif'; font-size: 20px; color: white; }
+.emoji-header-left-side { width: 664px; display: flex; justify-content: space-between; }
+.grid-select-txt { font-size: 16px; color: white; margin-right: 8px; }
+.grid-select-wrapper {  display: flex; align-items: center; position: relative; }
+.grid-select { color: white; font-size: 16px; padding: 16px 15px; background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;}
+.grid-size { font-size: 14px; color:white; margin-right: 15px; cursor: pointer;
+&:hover { opacity: 0.5 }}
+.grid-size-wrapper { width: 100px; position: absolute; top: 50px}

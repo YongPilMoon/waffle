@@ -1,0 +1,37 @@
+@import '../../../styles/utils';
+
+.grid {
+  background-color: white;
+  padding: 50px;
+  width: 66.4rem;
+  height: 66.4rem;
+  margin-right: 32px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3)
+}
+
+.cell {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.emoji {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.cell-margin {
+  margin-right: $cell-gutter;
+}
+
+.selected {
+  box-shadow: 0 0 0 4px $yellow-orange;
+}

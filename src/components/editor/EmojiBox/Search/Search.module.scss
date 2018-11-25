@@ -1,0 +1,6 @@
+@import '../../../../styles/utils';
+.emoji-search-input { width: 372px; height: 48px; border-radius: 24px;  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 16px; color: #ffffff; padding: 0 15px;
+  &::placeholder{ opacity: 0.5; font-size: 16px; color: #ffffff; text-align: center; transform: translateX(20px)}}
+.input-background-image {background: rgba(255, 255, 255, 0.1) url(#{$s3url}/image/editor/search.svg) no-repeat; opacity: 0.5;
+  background-position: 44% 50%}

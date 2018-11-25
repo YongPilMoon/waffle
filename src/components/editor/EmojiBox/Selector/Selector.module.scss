@@ -1,0 +1,6 @@
+@import '../../../../styles/utils';
+.emoji-wrapper { padding: 5.6px 16px 21px; height: 412px; width: 100%; overflow: scroll;  }
+.emoji { width: 39.6px; height: 39.6px; border-radius: 77px; background-color: rgba(233, 246, 239, 0.1);
+display: inline-block; font-size: 24px; text-align: center; line-height: 39.6px; margin-top: 10.4px;
+  &:not(:nth-child(8n)){ margin-right: 10.4px; }
+  &:disabled { opacity: 0.3 }}

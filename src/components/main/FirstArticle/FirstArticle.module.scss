@@ -1,0 +1,12 @@
+@import '../../../styles/utils';
+
+.first-article { display: flex; flex-direction: column; align-items: center; padding-top: 3.2rem; }
+.intro { display: flex; font-family: Baloo, 'sans-serif'; color: white; font-size: 6.2rem; text-align: center;
+  .intro-text { margin-right: 10px; }}
+.create-waffle-btn {
+  display: flex; align-items: center; border-radius: 24px; padding: 8px 14px; background-color: $yellow-orange;
+  margin-top: 2.4rem;
+  &__icon { margin-right: 4.5px }
+  &__text { font-family: Baloo, sans-serif; font-size: 20px; color: white; }
+}
+.twemoji { width: 60px; }

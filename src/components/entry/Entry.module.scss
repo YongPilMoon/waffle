@@ -1,0 +1,46 @@
+@import '../../styles/utils';
+
+fieldset {
+  border:0;
+  padding:0;
+  margin-left:0px;
+}
+
+legend {
+  position:absolute;
+  left: -5000px;
+}
+
+.entry-title {position:relative; color:white; font-size:5.6rem;font-family: Baloo; line-height: 1.39; letter-spacing: -0.2px;
+text-align: center; font-weight:normal;
+& > a { cursor : pointer;}
+}
+.entry-form {    position: relative;
+  max-width: 316px;
+  margin: 32px auto 0;
+
+.input-wrap { margin-top : 12px;}
+.button { margin-top: 20px;}
+}
+
+.clicked { opacity : 1; }
+.unClicked { opacity : 0.3;}
+
+
+
+//signform
+.desc {    position: relative;
+  display: flex; justify-content: space-between;
+  margin: 36px 0 12px 0;}
+p {    padding-right: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #ffffff;}
+.highlight { text-decoration-line: underline }
+.checkbox-label { position:relative; top:6px;}
+.entry-input { margin-top: 12px;}
